@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary: #0F172A;
@@ -51,7 +54,9 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             font-family: 'Playfair Display', serif;
         }
 
@@ -155,7 +160,8 @@
             height: 35px;
         }
 
-        .lang-btn:hover, .lang-btn.active {
+        .lang-btn:hover,
+        .lang-btn.active {
             background: var(--accent);
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
@@ -184,7 +190,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
+            background:
                 radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
                 radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
         }
@@ -218,8 +224,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            50% { transform: translate(50px, 50px) rotate(180deg); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(50px, 50px) rotate(180deg);
+            }
         }
 
         .hero-content-wrapper {
@@ -370,8 +383,15 @@
         }
 
         @keyframes floatCard {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .card-icon {
@@ -414,8 +434,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.1; }
-            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.15; }
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.1;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 0.15;
+            }
         }
 
         /* Section Styles */
@@ -773,13 +802,20 @@
             position: absolute;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
             animation: shimmer 3s ease-in-out infinite;
         }
 
         @keyframes shimmer {
-            0%, 100% { transform: translate(-50%, -50%); }
-            50% { transform: translate(0%, 0%); }
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%);
+            }
+
+            50% {
+                transform: translate(0%, 0%);
+            }
         }
 
         .project-content {
@@ -917,6 +953,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -927,6 +964,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -995,7 +1033,8 @@
                 width: 100%;
             }
 
-            .btn-primary, .btn-secondary {
+            .btn-primary,
+            .btn-secondary {
                 width: 100%;
                 justify-content: center;
             }
@@ -1016,13 +1055,16 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="text-2xl font-bold" style="background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">RBA</div>
-                
+                <div class="text-2xl font-bold"
+                    style="background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    RBA</div>
+
                 <!-- Desktop Navigation -->
                 <div class="navbar-links hidden md:flex items-center gap-6">
                     <a href="#home" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a>
@@ -1032,7 +1074,7 @@
                     <a href="#experience" class="nav-link" data-fr="Expérience" data-en="Experience">Expérience</a>
                     <a href="#projects" class="nav-link" data-fr="Projets" data-en="Projects">Projets</a>
                     <a href="#contact" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
-                    
+
                     <div class="lang-buttons flex gap-2">
                         <button class="lang-btn active" data-lang="fr" title="Français">
                             <span class="lang-flag">🇫🇷</span>
@@ -1064,7 +1106,7 @@
             <a href="#experience" class="mobile-nav-link" data-fr="Expérience" data-en="Experience">Expérience</a>
             <a href="#projects" class="mobile-nav-link" data-fr="Projets" data-en="Projects">Projets</a>
             <a href="#contact" class="mobile-nav-link" data-fr="Contact" data-en="Contact">Contact</a>
-            
+
             <div class="flex gap-2 mt-4">
                 <div class="lang-buttons flex gap-2">
                     <button class="lang-btn active" data-lang="fr" title="Français">
@@ -1091,21 +1133,29 @@
                         <span data-fr="Je suis" data-en="I'm">Je suis</span><br>
                         <span class="gradient-text">Rami Ben Arbi</span>
                     </h1>
-                    <h2 class="hero-subtitle" data-fr="Ingénieur Full Stack | Développeur Créatif" data-en="Full Stack Engineer | Creative Developer">Ingénieur Full Stack | Développeur Créatif</h2>
-                    <p class="hero-description" data-fr="Spécialisé dans le développement web et mobile avec expertise en React.js, Next.js, et Symfony. Je transforme des idées complexes en applications web performantes et élégantes." data-en="Specialized in web and mobile development with expertise in React.js, Next.js, and Symfony. I transform complex ideas into high-performance and elegant web applications.">
-                        Spécialisé dans le développement web et mobile avec expertise en React.js, Next.js, et Symfony. Je transforme des idées complexes en applications web performantes et élégantes.
+                    <h2 class="hero-subtitle" data-fr="Ingénieur Full Stack | Développeur Créatif"
+                        data-en="Full Stack Engineer | Creative Developer">Ingénieur Full Stack | Développeur Créatif
+                    </h2>
+                    <p class="hero-description"
+                        data-fr="Spécialisé dans le développement web et mobile avec expertise en React.js, Next.js, et Symfony. Je transforme des idées complexes en applications web performantes et élégantes."
+                        data-en="Specialized in web and mobile development with expertise in React.js, Next.js, and Symfony. I transform complex ideas into high-performance and elegant web applications.">
+                        Spécialisé dans le développement web et mobile avec expertise en React.js, Next.js, et Symfony.
+                        Je transforme des idées complexes en applications web performantes et élégantes.
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                             <span data-fr="Me Contacter" data-en="Contact Me">Me Contacter</span>
                         </a>
 
                         <a href="./CV/CV_RAMI.pdf" download class="btn-secondary" id="downloadCvBtn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                 <polyline points="7 10 12 15 17 10"></polyline>
                                 <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -1113,14 +1163,16 @@
                             <span data-fr="Télécharger CV" data-en="Download Resume">Télécharger CV</span>
                         </a>
                         <a href="#projects" class="btn-secondary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                </path>
                             </svg>
                             <span data-fr="Voir Projets" data-en="View Projects">Voir Projets</span>
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="hero-visual">
                     <div class="hero-circle"></div>
                     <div class="hero-image-wrapper">
@@ -1128,15 +1180,16 @@
                         <div class="floating-card floating-card-1">
                             <div class="card-icon">💼</div>
                             <div class="card-title" data-fr="Expérience" data-en="Experience">Expérience</div>
-                            <div class="card-value"><span id="yearsExperience">3</span>+ <span data-fr="ans" data-en="years">ans</span></div>
+                            <div class="card-value"><span id="yearsExperience">3</span>+ <span data-fr="ans"
+                                    data-en="years">ans</span></div>
                         </div>
-                        
+
                         <div class="floating-card floating-card-2">
                             <div class="card-icon">🚀</div>
                             <div class="card-title" data-fr="Projets" data-en="Projects">Projets</div>
                             <div class="card-value">15+</div>
                         </div>
-                        
+
                         <div class="floating-card floating-card-3">
                             <div class="card-icon">⚡</div>
                             <div class="card-title" data-fr="Technologies" data-en="Technologies">Technologies</div>
@@ -1154,23 +1207,36 @@
             <h2 class="section-title" data-fr="À Propos de Moi" data-en="About Me">À Propos de Moi</h2>
             <div class="about-content fade-in">
                 <div class="about-text">
-                    <p class="mb-4" data-fr="Ingénieur Full Stack passionné avec plus de 3 ans d'expérience dans le développement d'applications web et mobiles. Mon parcours m'a permis de maîtriser l'ensemble de la chaîne de développement, du front-end au back-end." data-en="Passionate Full Stack Engineer with over 3 years of experience in web and mobile application development. My journey has enabled me to master the entire development chain, from front-end to back-end.">
-                        Ingénieur Full Stack passionné avec plus de 3 ans d'expérience dans le développement d'applications web et mobiles. Mon parcours m'a permis de maîtriser l'ensemble de la chaîne de développement, du front-end au back-end.
+                    <p class="mb-4"
+                        data-fr="Ingénieur Full Stack passionné avec plus de 3 ans d'expérience dans le développement d'applications web et mobiles. Mon parcours m'a permis de maîtriser l'ensemble de la chaîne de développement, du front-end au back-end."
+                        data-en="Passionate Full Stack Engineer with over 3 years of experience in web and mobile application development. My journey has enabled me to master the entire development chain, from front-end to back-end.">
+                        Ingénieur Full Stack passionné avec plus de 3 ans d'expérience dans le développement
+                        d'applications web et mobiles. Mon parcours m'a permis de maîtriser l'ensemble de la chaîne de
+                        développement, du front-end au back-end.
                     </p>
-                    <p class="mb-4" data-fr="Je me spécialise dans la création d'interfaces utilisateur modernes avec React.js et Next.js, tout en développant des APIs robustes avec Symfony. Ma force réside dans ma capacité à transformer des concepts complexes en solutions techniques élégantes et performantes." data-en="I specialize in creating modern user interfaces with React.js and Next.js, while developing robust APIs with Symfony. My strength lies in my ability to transform complex concepts into elegant and efficient technical solutions.">
-                        Je me spécialise dans la création d'interfaces utilisateur modernes avec React.js et Next.js, tout en développant des APIs robustes avec Symfony. Ma force réside dans ma capacité à transformer des concepts complexes en solutions techniques élégantes et performantes.
+                    <p class="mb-4"
+                        data-fr="Je me spécialise dans la création d'interfaces utilisateur modernes avec React.js et Next.js, tout en développant des APIs robustes avec Symfony. Ma force réside dans ma capacité à transformer des concepts complexes en solutions techniques élégantes et performantes."
+                        data-en="I specialize in creating modern user interfaces with React.js and Next.js, while developing robust APIs with Symfony. My strength lies in my ability to transform complex concepts into elegant and efficient technical solutions.">
+                        Je me spécialise dans la création d'interfaces utilisateur modernes avec React.js et Next.js,
+                        tout en développant des APIs robustes avec Symfony. Ma force réside dans ma capacité à
+                        transformer des concepts complexes en solutions techniques élégantes et performantes.
                     </p>
-                    <p class="mb-4" data-fr="Autonome, motivé et passionné, je m'épanouis dans des environnements collaboratifs où je peux contribuer à des projets innovants tout en continuant à développer mes compétences." data-en="Autonomous, motivated, and passionate, I thrive in collaborative environments where I can contribute to innovative projects while continuing to develop my skills.">
-                        Autonome, motivé et passionné, je m'épanouis dans des environnements collaboratifs où je peux contribuer à des projets innovants tout en continuant à développer mes compétences.
+                    <p class="mb-4"
+                        data-fr="Autonome, motivé et passionné, je m'épanouis dans des environnements collaboratifs où je peux contribuer à des projets innovants tout en continuant à développer mes compétences."
+                        data-en="Autonomous, motivated, and passionate, I thrive in collaborative environments where I can contribute to innovative projects while continuing to develop my skills.">
+                        Autonome, motivé et passionné, je m'épanouis dans des environnements collaboratifs où je peux
+                        contribuer à des projets innovants tout en continuant à développer mes compétences.
                     </p>
-                    <p data-fr="Basé à Ariana, Tunisie, je suis trilingue (Français, Arabe, Anglais) et toujours à la recherche de nouveaux défis techniques qui me permettent de créer des solutions innovantes et impactantes." data-en="Based in Ariana, Tunisia, I am trilingual (French, Arabic, English) and always looking for new technical challenges that allow me to create innovative and impactful solutions.">
-                        Basé à Ariana, Tunisie, je suis trilingue (Français, Arabe, Anglais) et toujours à la recherche de nouveaux défis techniques qui me permettent de créer des solutions innovantes et impactantes.
+                    <p data-fr="Basé à Ariana, Tunisie, je suis trilingue (Français, Arabe, Anglais) et toujours à la recherche de nouveaux défis techniques qui me permettent de créer des solutions innovantes et impactantes."
+                        data-en="Based in Ariana, Tunisia, I am trilingual (French, Arabic, English) and always looking for new technical challenges that allow me to create innovative and impactful solutions.">
+                        Basé à Ariana, Tunisie, je suis trilingue (Français, Arabe, Anglais) et toujours à la recherche
+                        de nouveaux défis techniques qui me permettent de créer des solutions innovantes et impactantes.
                     </p>
                 </div>
                 <div class="about-image">
                     <div class="about-image-wrapper">
                         <div class="profile-placeholder">
-                     <img src="./assets/main.jpeg">
+                            <img src="./assets/main.jpeg">
                         </div>
                     </div>
                 </div>
@@ -1187,8 +1253,12 @@
                     <div class="education-icon">
                         🎓
                     </div>
-                    <h3 class="education-degree" data-fr="Cycle d'Ingénieur en Informatique" data-en="Computer Engineering Degree">Cycle d'Ingénieur en Informatique</h3>
-                    <p class="education-school" data-fr="Institut Supérieur des Sciences Appliquées et de Technologie de Sousse" data-en="Higher Institute of Applied Sciences and Technology of Sousse">Institut Supérieur des Sciences Appliquées et de Technologie de Sousse</p>
+                    <h3 class="education-degree" data-fr="Cycle d'Ingénieur en Informatique"
+                        data-en="Computer Engineering Degree">Cycle d'Ingénieur en Informatique</h3>
+                    <p class="education-school"
+                        data-fr="Institut Supérieur des Sciences Appliquées et de Technologie de Sousse"
+                        data-en="Higher Institute of Applied Sciences and Technology of Sousse">Institut Supérieur des
+                        Sciences Appliquées et de Technologie de Sousse</p>
                     <p class="education-year">2022</p>
                 </div>
 
@@ -1196,8 +1266,13 @@
                     <div class="education-icon">
                         📚
                     </div>
-                    <h3 class="education-degree" data-fr="Licence Appliquée en Informatique Industrielle" data-en="Applied Bachelor's Degree in Industrial Computing">Licence Appliquée en Informatique Industrielle</h3>
-                    <p class="education-school" data-fr="Institut Supérieur des Sciences Appliquées et de Technologie de Sousse" data-en="Higher Institute of Applied Sciences and Technology of Sousse">Institut Supérieur des Sciences Appliquées et de Technologie de Sousse</p>
+                    <h3 class="education-degree" data-fr="Licence Appliquée en Informatique Industrielle"
+                        data-en="Applied Bachelor's Degree in Industrial Computing">Licence Appliquée en Informatique
+                        Industrielle</h3>
+                    <p class="education-school"
+                        data-fr="Institut Supérieur des Sciences Appliquées et de Technologie de Sousse"
+                        data-en="Higher Institute of Applied Sciences and Technology of Sousse">Institut Supérieur des
+                        Sciences Appliquées et de Technologie de Sousse</p>
                     <p class="education-year">2019</p>
                 </div>
             </div>
@@ -1217,11 +1292,13 @@
                         <span class="skill-tag">PHP</span>
                         <span class="skill-tag">HTML/CSS</span>
                         <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3 data-fr="Frontend" data-en="Frontend">Frontend</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">React.js</span>
                         <span class="skill-tag">Next.js</span>
@@ -1230,17 +1307,19 @@
                         <span class="skill-tag">React Query</span>
                         <span class="skill-tag">MUI</span>
                         <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Apollo Client</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3 data-fr="Backend" data-en="Backend">Backend</h3>
                     <div class="skill-tags">
+                     <span class="skill-tag">REST API</span>
                         <span class="skill-tag">Symfony</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">REST API</span>
-                        <span class="skill-tag">GraphQL</span>
-                        <span class="skill-tag">Apollo Client</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">Keycloak</span>
                     </div>
                 </div>
 
@@ -1251,55 +1330,70 @@
                         <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">SQLite</span>
                         <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Redis</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>DevOps & Tools</h3>
+                    <h3 data-fr="DevOps et outils" data-en="DevOps & Tools">DevOps & Tools</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">GitLab</span>
                         <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">RabbitMQ</span>
                         <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Keycloak</span>
+            
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Testing & Documentation</h3>
+                    <h3 data-fr="Tests et documentation" data-en="Testing & Documentation">
+                        Testing & Documentation</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">PHPUnit</span>
-                        <span class="skill-tag">Jest</span>
-                        <span class="skill-tag">Cypress</span>
-                        <span class="skill-tag">Swagger</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">Confluence</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHPUnit</span>
+                            <span class="skill-tag">Jest</span>
+                            <span class="skill-tag">Cypress</span>
+                            <span class="skill-tag">Swagger</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Confluence</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title" data-fr="Expérience Professionnelle" data-en="Professional Experience">Expérience Professionnelle</h2>
+            <h2 class="section-title" data-fr="Expérience Professionnelle" data-en="Professional Experience">Expérience
+                Professionnelle</h2>
             <div class="timeline fade-in">
                 <!-- Experience 1 -->
                 <div class="timeline-item">
                     <div class="experience-card">
-                        <div class="experience-date" data-fr="Avril 2024 - Présent" data-en="April 2024 - Present">Avril 2024 - Présent</div>
-                        <h3 class="experience-title" data-fr="Consultant Full Stack" data-en="Full Stack Consultant">Consultant Full Stack</h3>
+                        <div class="experience-date" data-fr="Avril 2024 - Présent" data-en="April 2024 - Present">Avril
+                            2024 - Présent</div>
+                        <h3 class="experience-title" data-fr="Consultant Full Stack" data-en="Full Stack Consultant">
+                            Consultant Full Stack</h3>
                         <p class="experience-company">Fondative - ERP de Vente et Achat</p>
                         <ul class="experience-description">
-                            <li data-fr="Conception et développement d'un ERP de vente et d'achat pour distributeurs" data-en="Design and development of a sales and purchase ERP for distributors">Conception et développement d'un ERP de vente et d'achat pour distributeurs</li>
-                            <li data-fr="Implémentation d'APIs REST pour optimiser la communication entre les services" data-en="Implementation of REST APIs to optimize inter-service communication">Implémentation d'APIs REST pour optimiser la communication entre les services</li>
-                            <li data-fr="Intégration de synchronisations et développement de systèmes asynchrones" data-en="Integration of synchronizations and development of asynchronous systems">Intégration de synchronisations et développement de systèmes asynchrones</li>
-                            <li data-fr="Migration de bibliothèques pour améliorer les performances de l'application" data-en="Library migration to improve application performance">Migration de bibliothèques pour améliorer les performances de l'application</li>
-                            <li data-fr="Implémentation de tests unitaires et fonctionnels (PHPUnit, Cypress, Jest)" data-en="Implementation of unit and functional tests (PHPUnit, Cypress, Jest)">Implémentation de tests unitaires et fonctionnels (PHPUnit, Cypress, Jest)</li>
-                            <li data-fr="Mise en place de Redis pour optimiser les performances et temps de réponse" data-en="Implementation of Redis to optimize performance and response times">Mise en place de Redis pour optimiser les performances et temps de réponse</li>
+                            <li data-fr="Conception et développement d'un ERP de vente et d'achat pour distributeurs"
+                                data-en="Design and development of a sales and purchase ERP for distributors">Conception
+                                et développement d'un ERP de vente et d'achat pour distributeurs</li>
+                            <li data-fr="Implémentation d'APIs REST pour optimiser la communication entre les services"
+                                data-en="Implementation of REST APIs to optimize inter-service communication">
+                                Implémentation d'APIs REST pour optimiser la communication entre les services</li>
+                            <li data-fr="Intégration de synchronisations et développement de systèmes asynchrones"
+                                data-en="Integration of synchronizations and development of asynchronous systems">
+                                Intégration de synchronisations et développement de systèmes asynchrones</li>
+                            <li data-fr="Migration de bibliothèques pour améliorer les performances de l'application"
+                                data-en="Library migration to improve application performance">Migration de
+                                bibliothèques pour améliorer les performances de l'application</li>
+                            <li data-fr="Implémentation de tests unitaires et fonctionnels (PHPUnit, Cypress, Jest)"
+                                data-en="Implementation of unit and functional tests (PHPUnit, Cypress, Jest)">
+                                Implémentation de tests unitaires et fonctionnels (PHPUnit, Cypress, Jest)</li>
+                            <li data-fr="Mise en place de Redis pour optimiser les performances et temps de réponse"
+                                data-en="Implementation of Redis to optimize performance and response times">Mise en
+                                place de Redis pour optimiser les performances et temps de réponse</li>
                         </ul>
                         <div class="tech-stack">
                             <span class="tech-item">Symfony</span>
@@ -1316,15 +1410,28 @@
                 <!-- Experience 2 -->
                 <div class="timeline-item">
                     <div class="experience-card">
-                        <div class="experience-date" data-fr="Novembre 2023 - Mars 2024" data-en="November 2023 - March 2024">Novembre 2023 - Mars 2024</div>
-                        <h3 class="experience-title" data-fr="Développeur Full Stack" data-en="Full Stack Developer">Développeur Full Stack</h3>
-                        <p class="experience-company" data-fr="Plateforme de Réservation de Voyages" data-en="Travel Booking Platform">Plateforme de Réservation de Voyages</p>
+                        <div class="experience-date" data-fr="Novembre 2023 - Mars 2024"
+                            data-en="November 2023 - March 2024">Novembre 2023 - Mars 2024</div>
+                        <h3 class="experience-title" data-fr="Développeur Full Stack" data-en="Full Stack Developer">
+                            Développeur Full Stack</h3>
+                        <p class="experience-company" data-fr="Plateforme de Réservation de Voyages"
+                            data-en="Travel Booking Platform">Plateforme de Réservation de Voyages</p>
                         <ul class="experience-description">
-                            <li data-fr="Conception et développement d'un système de gestion des séjours" data-en="Design and development of a stay management system">Conception et développement d'un système de gestion des séjours</li>
-                            <li data-fr="Mise en place d'une architecture MVC robuste" data-en="Implementation of a robust MVC architecture">Mise en place d'une architecture MVC robuste</li>
-                            <li data-fr="Implémentation d'API REST pour la gestion des e-visas, réservations et paiements" data-en="Implementation of REST API for e-visa, booking, and payment management">Implémentation d'API REST pour la gestion des e-visas, réservations et paiements</li>
-                            <li data-fr="Gestion du stockage des fichiers avec téléversement d'images sur AWS" data-en="File storage management with image upload to AWS">Gestion du stockage des fichiers avec téléversement d'images sur AWS</li>
-                            <li data-fr="Intégration de Stripe pour le traitement sécurisé des paiements" data-en="Integration of Stripe for secure payment processing">Intégration de Stripe pour le traitement sécurisé des paiements</li>
+                            <li data-fr="Conception et développement d'un système de gestion des séjours"
+                                data-en="Design and development of a stay management system">Conception et développement
+                                d'un système de gestion des séjours</li>
+                            <li data-fr="Mise en place d'une architecture MVC robuste"
+                                data-en="Implementation of a robust MVC architecture">Mise en place d'une architecture
+                                MVC robuste</li>
+                            <li data-fr="Implémentation d'API REST pour la gestion des e-visas, réservations et paiements"
+                                data-en="Implementation of REST API for e-visa, booking, and payment management">
+                                Implémentation d'API REST pour la gestion des e-visas, réservations et paiements</li>
+                            <li data-fr="Gestion du stockage des fichiers avec téléversement d'images sur AWS"
+                                data-en="File storage management with image upload to AWS">Gestion du stockage des
+                                fichiers avec téléversement d'images sur AWS</li>
+                            <li data-fr="Intégration de Stripe pour le traitement sécurisé des paiements"
+                                data-en="Integration of Stripe for secure payment processing">Intégration de Stripe pour
+                                le traitement sécurisé des paiements</li>
                         </ul>
                         <div class="tech-stack">
                             <span class="tech-item">Symfony</span>
@@ -1340,15 +1447,27 @@
                 <!-- Experience 3 -->
                 <div class="timeline-item">
                     <div class="experience-card">
-                        <div class="experience-date" data-fr="Février 2023 - Octobre 2023" data-en="February 2023 - October 2023">Février 2023 - Octobre 2023</div>
-                        <h3 class="experience-title" data-fr="Développeur Full Stack" data-en="Full Stack Developer">Développeur Full Stack</h3>
-                        <p class="experience-company" data-fr="Investissement Immobilier" data-en="Real Estate Investment">Investissement Immobilier</p>
+                        <div class="experience-date" data-fr="Février 2023 - Octobre 2023"
+                            data-en="February 2023 - October 2023">Février 2023 - Octobre 2023</div>
+                        <h3 class="experience-title" data-fr="Développeur Full Stack" data-en="Full Stack Developer">
+                            Développeur Full Stack</h3>
+                        <p class="experience-company" data-fr="Investissement Immobilier"
+                            data-en="Real Estate Investment">Investissement Immobilier</p>
                         <ul class="experience-description">
-                            <li data-fr="Développement d'une PWA pour l'investissement immobilier" data-en="Development of a PWA for real estate investment">Développement d'une PWA pour l'investissement immobilier</li>
-                            <li data-fr="Création d'interfaces UI avec React.js et TypeScript" data-en="UI interface creation with React.js and TypeScript">Création d'interfaces UI avec React.js et TypeScript</li>
-                            <li data-fr="Implémentation de Redux pour la gestion d'état" data-en="Implementation of Redux for state management">Implémentation de Redux pour la gestion d'état</li>
-                            <li data-fr="Conception d'APIs RESTful robustes et performantes" data-en="Design of robust and high-performance RESTful APIs">Conception d'APIs RESTful robustes et performantes</li>
-                            <li data-fr="Documentation technique via Swagger" data-en="Technical documentation via Swagger">Documentation technique via Swagger</li>
+                            <li data-fr="Développement d'une PWA pour l'investissement immobilier"
+                                data-en="Development of a PWA for real estate investment">Développement d'une PWA pour
+                                l'investissement immobilier</li>
+                            <li data-fr="Création d'interfaces UI avec React.js et TypeScript"
+                                data-en="UI interface creation with React.js and TypeScript">Création d'interfaces UI
+                                avec React.js et TypeScript</li>
+                            <li data-fr="Implémentation de Redux pour la gestion d'état"
+                                data-en="Implementation of Redux for state management">Implémentation de Redux pour la
+                                gestion d'état</li>
+                            <li data-fr="Conception d'APIs RESTful robustes et performantes"
+                                data-en="Design of robust and high-performance RESTful APIs">Conception d'APIs RESTful
+                                robustes et performantes</li>
+                            <li data-fr="Documentation technique via Swagger"
+                                data-en="Technical documentation via Swagger">Documentation technique via Swagger</li>
                         </ul>
                         <div class="tech-stack">
                             <span class="tech-item">Symfony</span>
@@ -1363,14 +1482,25 @@
                 <!-- Experience 4 -->
                 <div class="timeline-item">
                     <div class="experience-card">
-                        <div class="experience-date" data-fr="Février 2022 - Janvier 2023" data-en="February 2022 - January 2023">Février 2022 - Janvier 2023</div>
-                        <h3 class="experience-title" data-fr="Développeur Full Stack" data-en="Full Stack Developer">Développeur Full Stack</h3>
-                        <p class="experience-company" data-fr="Site Web E-commerce" data-en="E-commerce Website">Site Web E-commerce</p>
+                        <div class="experience-date" data-fr="Février 2022 - Janvier 2023"
+                            data-en="February 2022 - January 2023">Février 2022 - Janvier 2023</div>
+                        <h3 class="experience-title" data-fr="Développeur Full Stack" data-en="Full Stack Developer">
+                            Développeur Full Stack</h3>
+                        <p class="experience-company" data-fr="Site Web E-commerce" data-en="E-commerce Website">Site
+                            Web E-commerce</p>
                         <ul class="experience-description">
-                            <li data-fr="Conception et développement d'un site web e-commerce complet" data-en="Design and development of a complete e-commerce website">Conception et développement d'un site web e-commerce complet</li>
-                            <li data-fr="Intégration d'Apollo Client pour la gestion d'état et consommation des API GraphQL" data-en="Integration of Apollo Client for state management and GraphQL API consumption">Intégration d'Apollo Client pour la gestion d'état et consommation des API GraphQL</li>
-                            <li data-fr="Optimisation des performances avec prefetching et server-side rendering" data-en="Performance optimization with prefetching and server-side rendering">Optimisation des performances avec prefetching et server-side rendering</li>
-                            <li data-fr="Conversion fidèle des designs Figma en interfaces utilisateur" data-en="Faithful conversion of Figma designs into user interfaces">Conversion fidèle des designs Figma en interfaces utilisateur</li>
+                            <li data-fr="Conception et développement d'un site web e-commerce complet"
+                                data-en="Design and development of a complete e-commerce website">Conception et
+                                développement d'un site web e-commerce complet</li>
+                            <li data-fr="Intégration d'Apollo Client pour la gestion d'état et consommation des API GraphQL"
+                                data-en="Integration of Apollo Client for state management and GraphQL API consumption">
+                                Intégration d'Apollo Client pour la gestion d'état et consommation des API GraphQL</li>
+                            <li data-fr="Optimisation des performances avec prefetching et server-side rendering"
+                                data-en="Performance optimization with prefetching and server-side rendering">
+                                Optimisation des performances avec prefetching et server-side rendering</li>
+                            <li data-fr="Conversion fidèle des designs Figma en interfaces utilisateur"
+                                data-en="Faithful conversion of Figma designs into user interfaces">Conversion fidèle
+                                des designs Figma en interfaces utilisateur</li>
                         </ul>
                         <div class="tech-stack">
                             <span class="tech-item">Next.js</span>
@@ -1390,87 +1520,149 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title" data-fr="Projets Récents" data-en="Recent Projects">Projets Récents</h2>
             <div class="projects-grid fade-in">
-                <div class="project-card">
+    <div class="project-card">
                     <div class="project-image">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
                             <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
                             <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                         </svg>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title" data-fr="ERP de Vente et Achat" data-en="Sales and Purchase ERP">ERP de Vente et Achat</h3>
-                        <p class="project-description" data-fr="Système ERP complet pour la gestion des ventes et achats avec synchronisation en temps réel, système de cache Redis, et architecture asynchrone." data-en="Complete ERP system for sales and purchase management with real-time synchronization, Redis cache system, and asynchronous architecture.">
-                            Système ERP complet pour la gestion des ventes et achats avec synchronisation en temps réel, système de cache Redis, et architecture asynchrone.
+                        <h3 class="project-title" data-fr="Architecture de microservices avec Spring Boot 3"
+                         data-en="Microservices Architecture with Spring Boot 3">Microservices Architecture with Spring Boot 3</h3>
+                        <p class="project-description"
+                            data-fr="Projet technique réalisé pour maîtriser Spring Boot 3 et Spring Cloud."
+                            data-en="Technical project undertaken to master Spring Boot 3 and Spring Cloud.">
+                          Technical project undertaken to master Spring Boot 3 and Spring Cloud.
+                        <div class="tech-stack">
+                            <span class="tech-item">Spring boot 3</span>
+                            <span class="tech-item">Java 17+</span>
+                            <span class="tech-item">Spring Cloud Gateway</span>
+                            <span class="tech-item">Spring Cloud Config Server</span>
+                            <span class="tech-item">Eureka Discovery Server</span>
+                            <span class="tech-item">OpenFeign</span>
+                            <span class="tech-item">Zipkin</span>
+                            <span class="tech-item">Maven</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-fr="ERP de Vente et Achat" data-en="Sales and Purchase ERP">ERP
+                            de Vente et Achat</h3>
+                        <p class="project-description"
+                            data-fr="Système ERP complet pour la gestion des ventes et achats avec synchronisation en temps réel, système de cache Redis, et architecture asynchrone."
+                            data-en="Complete ERP system for sales and purchase management with real-time synchronization, Redis cache system, and asynchronous architecture.">
+                            Système ERP complet pour la gestion des ventes et achats avec synchronisation en temps réel,
+                            système de cache Redis, et architecture asynchrone.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-item">Symfony</span>
                             <span class="tech-item">React</span>
                             <span class="tech-item">Redis</span>
                             <span class="tech-item">RabbitMQ</span>
+                            <span class="tech-item">TypeScript</span>
+                            <span class="tech-item">React Query</span>
+                            <span class="tech-item">Php</span>
+                            <span class="tech-item">Swagger</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                             <circle cx="12" cy="10" r="3"></circle>
                         </svg>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title" data-fr="Plateforme de Réservation" data-en="Booking Platform">Plateforme de Réservation</h3>
-                        <p class="project-description" data-fr="Application de réservation de voyages avec gestion des e-visas, intégration de paiements Stripe, et stockage sur AWS." data-en="Travel booking application with e-visa management, Stripe payment integration, and AWS storage.">
-                            Application de réservation de voyages avec gestion des e-visas, intégration de paiements Stripe, et stockage sur AWS.
+                        <h3 class="project-title" data-fr="Plateforme de Réservation" data-en="Booking Platform">
+                            Plateforme de Réservation</h3>
+                        <p class="project-description"
+                            data-fr="Application de réservation de voyages avec gestion des e-visas, intégration de paiements Stripe, et stockage sur AWS."
+                            data-en="Travel booking application with e-visa management, Stripe payment integration, and AWS storage.">
+                            Application de réservation de voyages avec gestion des e-visas, intégration de paiements
+                            Stripe, et stockage sur AWS.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-item">Symfony</span>
                             <span class="tech-item">React</span>
                             <span class="tech-item">AWS</span>
                             <span class="tech-item">Stripe</span>
+                             <span class="tech-item">TypeScript</span>
+                         <span class="tech-item">React Query</span>
+                            <span class="tech-item">Php</span>
+                            <span class="tech-item">Swagger</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title" data-fr="Application Immobilière PWA" data-en="Real Estate PWA">Application Immobilière PWA</h3>
-                        <p class="project-description" data-fr="Progressive Web App pour l'investissement immobilier avec gestion d'état Redux et APIs RESTful performantes." data-en="Progressive Web App for real estate investment with Redux state management and high-performance RESTful APIs.">
-                            Progressive Web App pour l'investissement immobilier avec gestion d'état Redux et APIs RESTful performantes.
+                        <h3 class="project-title" data-fr="Application Immobilière PWA" data-en="Real Estate PWA">
+                            Application Immobilière PWA</h3>
+                        <p class="project-description"
+                            data-fr="Progressive Web App pour l'investissement immobilier avec gestion d'état Redux et APIs RESTful performantes."
+                            data-en="Progressive Web App for real estate investment with Redux state management and high-performance RESTful APIs.">
+                            Progressive Web App pour l'investissement immobilier avec gestion d'état Redux et APIs
+                            RESTful performantes.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-item">React</span>
                             <span class="tech-item">Redux</span>
                             <span class="tech-item">Symfony</span>
                             <span class="tech-item">PWA</span>
+                            <span class="tech-item">TypeScript</span>
+                             <span class="tech-item">React Query</span>
+                            <span class="tech-item">Php</span>
+                            <span class="tech-item">Swagger</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
                             <circle cx="9" cy="21" r="1"></circle>
                             <circle cx="20" cy="21" r="1"></circle>
                             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                         </svg>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title" data-fr="Site E-commerce" data-en="E-commerce Website">Site E-commerce</h3>
-                        <p class="project-description" data-fr="Plateforme e-commerce avec Next.js, GraphQL, et Apollo Client. Optimisations SSR pour performances maximales." data-en="E-commerce platform with Next.js, GraphQL, and Apollo Client. SSR optimizations for maximum performance.">
-                            Plateforme e-commerce avec Next.js, GraphQL, et Apollo Client. Optimisations SSR pour performances maximales.
+                        <h3 class="project-title" data-fr="Site E-commerce" data-en="E-commerce Website">Site E-commerce
+                        </h3>
+                        <p class="project-description"
+                            data-fr="Plateforme e-commerce avec Next.js, GraphQL, et Apollo Client. Optimisations SSR pour performances maximales."
+                            data-en="E-commerce platform with Next.js, GraphQL, and Apollo Client. SSR optimizations for maximum performance.">
+                            Plateforme e-commerce avec Next.js, GraphQL, et Apollo Client. Optimisations SSR pour
+                            performances maximales.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-item">Next.js</span>
+                                      <span class="tech-item">TypeScript</span>
                             <span class="tech-item">GraphQL</span>
                             <span class="tech-item">Apollo</span>
                             <span class="tech-item">Symfony</span>
+                               <span class="tech-item">Php</span>
                         </div>
                     </div>
                 </div>
@@ -1483,28 +1675,38 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title" data-fr="Contactez-moi" data-en="Get In Touch">Contactez-moi</h2>
             <div class="contact-content fade-in">
-                <p class="contact-text" data-fr="Je suis actuellement ouvert aux opportunités de collaboration et aux nouveaux projets. Que vous ayez une question ou souhaitiez simplement discuter, n'hésitez pas à me contacter." data-en="I'm currently open to collaboration opportunities and new projects. Whether you have a question or just want to chat, feel free to contact me.">
-                    Je suis actuellement ouvert aux opportunités de collaboration et aux nouveaux projets. Que vous ayez une question ou souhaitiez simplement discuter, n'hésitez pas à me contacter.
+                <p class="contact-text"
+                    data-fr="Je suis actuellement ouvert aux opportunités de collaboration et aux nouveaux projets. Que vous ayez une question ou souhaitiez simplement discuter, n'hésitez pas à me contacter."
+                    data-en="I'm currently open to collaboration opportunities and new projects. Whether you have a question or just want to chat, feel free to contact me.">
+                    Je suis actuellement ouvert aux opportunités de collaboration et aux nouveaux projets. Que vous ayez
+                    une question ou souhaitiez simplement discuter, n'hésitez pas à me contacter.
                 </p>
                 <div class="contact-links">
                     <a href="mailto:ramibenarbi7@gmail.com" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
                         <span>Email</span>
                     </a>
                     <a href="https://linkedin.com/in/rami-ben-arbi-b65abb151/" target="_blank" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
                             <rect x="2" y="9" width="4" height="12"></rect>
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                         <span>LinkedIn</span>
                     </a>
                     <a href="tel:+21629885650" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
                         </svg>
                         <span data-fr="Téléphone" data-en="Phone">Téléphone</span>
                     </a>
@@ -1516,7 +1718,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p data-fr="© Rami Ben Arbi. Tous droits réservés." data-en="© Rami Ben Arbi. All rights reserved.">© 2024 Rami Ben Arbi. Tous droits réservés.</p>
+            <p data-fr="© Rami Ben Arbi. Tous droits réservés." data-en="© Rami Ben Arbi. All rights reserved.">© 2024
+                Rami Ben Arbi. Tous droits réservés.</p>
         </div>
     </footer>
 
@@ -1536,7 +1739,7 @@
         const themeToggle = document.getElementById('themeToggle');
         const mobileThemeToggle = document.getElementById('mobileThemeToggle');
         const html = document.documentElement;
-        
+
         // Check for saved theme preference or default to 'dark'
         const currentTheme = localStorage.getItem('theme') || 'dark';
         html.setAttribute('data-theme', currentTheme);
@@ -1552,7 +1755,7 @@
         function toggleTheme() {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
+
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             updateThemeIcon(newTheme);
@@ -1563,7 +1766,7 @@
 
         // Language Switcher
         let currentLang = 'fr';
-        
+
         function switchLanguage(lang) {
             currentLang = lang;
             document.querySelectorAll('[data-fr][data-en]').forEach(element => {
@@ -1573,7 +1776,7 @@
                     element.textContent = element.getAttribute('data-en');
                 }
             });
-            
+
             // Update CV download link based on language
             const downloadBtn = document.getElementById('downloadCvBtn');
             if (downloadBtn) {
@@ -1585,7 +1788,7 @@
                     downloadBtn.download = 'Resume_Rami_Ben_Arbi.pdf';
                 }
             }
-            
+
             // Update active language button
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 if (btn.getAttribute('data-lang') === lang) {
@@ -1676,5 +1879,6 @@
         document.querySelector('.footer p').innerHTML = document.querySelector('.footer p').innerHTML.replace('2024', currentYear);
     </script>
 
-    </body>
+</body>
+
 </html>
